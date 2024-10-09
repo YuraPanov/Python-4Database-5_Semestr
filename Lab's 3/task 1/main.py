@@ -3,6 +3,7 @@ from pathlib import Path
 import argparse
 
 
+
 def apply_augmentations(image, augmentations):
     for aug in augmentations:
         if aug == "rotate_90":
