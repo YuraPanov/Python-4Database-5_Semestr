@@ -1,6 +1,7 @@
 import cv2
 
-video_path = "D:/Python_LabsAndProject/Python4workWith_DataBase_5semester/Lab's 4/movies/2023-07-03 22-36-07.mp4"
+# video_path = "D:/Python_LabsAndProjekt/Python4workWith_DataBase_5semester/Lab's 4/movies/2023-07-03 22-36-07.mp4"
+video_path = input("Введите путь к видеофайлу: ")
 cap = cv2.VideoCapture(video_path)
 
 # Получение FPS и имени файла
@@ -9,7 +10,7 @@ file_name = video_path.split('/')[-1]  # Получение имени файл�
 
 # Проверка, что видеофайл открылся
 if not cap.isOpened():
-    print("Ошибка: не удалось открыть видео.")
+    print("Ошибка: не удалось открыть видео. Проверьте путь к файлу.")
 else:
     # Чтение и отображение каждого кадра
     while cap.isOpened():
