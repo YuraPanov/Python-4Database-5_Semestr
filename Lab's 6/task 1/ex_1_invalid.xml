@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<migration urlid="http://www.microsoft.com/migration/1.0/migxmlext/CustomFile">
+    <component type="Documents">
+        <displayName>My Video</displayName>
+        <role role="Data">
+            <detects>
+                <detect>
+                    <condition>MigXmlHelper.DoesObjectExist("File","%CSIDL_MYVIDEO%")</condition>
+                </detect>
+            </detects>
+        </role>
+    </component>
+</migration>
